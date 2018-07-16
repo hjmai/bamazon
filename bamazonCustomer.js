@@ -73,7 +73,7 @@ var updateTable = function(amount, inventory) {
         [amount, inventory.id],
         function(err, res) {
           // Let the user know the purchase was successful, re-run loadProducts
-          console.log("\nSuccessfully purchased " + amount + " " + inventory.product_name + "'s!");
+          console.log("\nSuccessfully purchased " + amount + " " + inventory.product_name + "'s!\n");
           displayItems();
         });
 }
